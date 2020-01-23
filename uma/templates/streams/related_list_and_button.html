@@ -3,27 +3,30 @@
 
  <div class="table-responsive">
     <h5 class="mb-20" style="background-color:#2D3142; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; color:yellow">Related</h5>
-    <table class="table table-bordered">
-      <tbody>
-        {% for a in self.points_r %}
-        <tr>
-        <td style="font-size: 15px;">{{ a.point_r }}</td>
-          <td>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: rgba(31, 84, 159, 0.5); border-color: rgba(31, 84, 159, 0.5);">Download
-                <!-- <span class="caret"></span> -->
-                </button>
-                <ul class="dropdown-menu">
-                    {% for b in a.pdfs_r %}
-                        <li><a href="{{ b.url }}">{{ b.title }}</a>
-                    {% endfor %}
-                </li>
-                </ul>
-              </div>
+ </div>
 
-            </td>
-        </tr>
-        {% endfor %}
-      </tbody>
+<table class="table table-hover">
+  <tbody>
+    {% for a in self.points_r %}
+    <tr class="table-primary">
+      
+      
+      <td style="font-size: medium; color:midnightblue; font-family:Arial, Helvetica, sans-serif;">{{ a.point_r }}</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: rgba(31, 84, 159, 0.5); border-color: rgba(31, 84, 159, 0.5);">Download
+          <!-- <span class="caret"></span> -->
+          </button>
+          <ul class="dropdown-menu">
+              {% for b in a.pdfs_r %}
+                  <li><a class="dropdown-item disable" href="{{ b.url }} ">{{ b.title }}</a>
+              {% endfor %}
+              
+          </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+    </tbody>
 </table>
-</div>

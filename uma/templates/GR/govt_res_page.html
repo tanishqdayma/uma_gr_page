@@ -15,46 +15,77 @@
 
             <!-- Header Section Begin -->
             <header class="header-section">
-                <div class="header-top">
-                    <div class="container">
+              <div class="header-top">
+             
+                    <div class="container" style="padding-bottom: 0%;">
                       <div class="row2 mt-2">
                         <div class="col-2 text-center headerlogo">
                             <a href="">
                               <img src="{% static 'img/logo_iit.png' %}" class="img-fluid"> </a>
                         </div>
-
+        
                          <div class="col-8">
-                              <h2 class="text-center" style="text-align:center;color:brown;font:simplifica"><b>UNNAT MAHARASHTRA ABHIYAN</b></h2><br>
-
+                              <h2 class="text-center" style="text-align:center;color:brown;font:simplifica; font-size: xx-large; padding-top: 20px;"><b>UNNAT MAHARASHTRA ABHIYAN</b></h2><br>
+        
                                   <p class="text-center headersloganmob px-2" style="text-align:center;">तकनीकी संस्थाओं का ज्ञान - स्वैच्छिक संगठनों का अनुभव - सरकार के संसाधन सभी को मिलाकर गांवों के विकास के लिए</p>
                         </div>
-
+        
                         </div>
+                      </div>
                     </div>
+        
+        
+                <!-- NEW NAVBAR -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-top:0%;">
+                  
+                 
+                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="glyphicon glyphicon-menu-right"></span> -->
+                    <a class="navbar-brand" href="#" style="font-size:medium;">Menu</a>
+                    <span class="navbar-toggler-icon"></span>
+        
+                  </button>
+                
+                  <div class="navbar-collapse collapse" id="navbarColor02" style="text-align:center; font-size: medium;">
+                    <ul class="navbar-nav mr-auto" style="margin: auto;">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#workshopsandevents">Workshops/Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">Participating Institutes</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: small;">
+                          <a class="dropdown-item" href="#importantlinks">Important Links</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="
+                        #contact">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">Apply</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">Login</a>
+                      </li>
+                    </ul>
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
                   </div>
-
-                <div class="nav-item">
-                  <div class="my_container">
-                      <nav class="nav-menu mobile-menu">
-                            <ul class="nav-list">
-                                <li class=""><a href="./home.html">Home</a></li>
-                                <li><a href="#aboutus">About Us</a>
-                                <li><a href="#workshopsandevents">Workshops/Events</a></li>
-                                <li><a href="">Participating Institutes</a></li>
-                                <li><a href="#">Resources</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#importantlinks">Important Links</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#">Apply</a></li>
-                                <li><a href="">Login</a></li>
-                            </ul>
-                        </nav>
-                        <div id="mobile-menu-wrap"></div>
-                    </div>
-                </div>
-            </header>
+                </nav>
+           </header>
             <!-- Header End -->
 
 
@@ -63,7 +94,7 @@
                   <div class="row justify-content-center">
                       <div class="col-lg-8 col-md-9">
                           <div class="destination_info">
-                            <h3 style="text-align: center;"><b>UMA Government Resolutions</b></h3>
+                            <h3 style="text-align: center; padding-bottom: 0%; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 40px; color: #85144b;">UMA GOVERNMENT RESOLUTIONS</b></h3>
                                     {% for block in page.content %}
                                         {% include_block block %}
                                     {% endfor %}
