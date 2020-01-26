@@ -95,15 +95,28 @@
                       <div class="col-lg-8 col-md-9">
                           <div class="destination_info">
                             <h3 style="text-align: center; padding-bottom: 0%; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 40px; color: #85144b;">{{ self.subtitle }}</b></h3>
-                                    {% for block in page.content %}
-                                        {% include_block block %}
-                                    {% endfor %}
+                            
+                            <div class="faq-section spad">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-lg-12">
+                                          <div class="faq-accordin">
+                                              <div class="accordion" id="accordionExample">    
+                                                      {% for block in page.content %}
+                                                          {% include_block block %}
+                                                      {% endfor %}
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
                                   </div>
-                                </div>
-                            </div>
+                  
+                          </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
 
  <!-- Footer Section Begin -->
             <!-- Footer Content -->
