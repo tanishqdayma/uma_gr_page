@@ -29,7 +29,7 @@ class ListAndButtonBlock(blocks.StructBlock):
 
 
 
-# -------------BLOCK FOR RDE PAGE----------------
+# -------------BLOCK FOR RDE PAGE-------------
 class ResourcesBlock(blocks.StructBlock):
     """List and buttons of main"""
 
