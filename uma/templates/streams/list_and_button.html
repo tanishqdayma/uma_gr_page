@@ -1,6 +1,12 @@
 {% load wagtailcore_tags %}
 {% load static %}
 
+<!-- {% if search_term %}
+  <header class="page-header">
+      <h1 class="page-title">Search Results for <span>{{ search_type }}: {{ search_term }}</span></h1>
+  </header>
+{% endif %} -->
+
 <div class="table-responsive">
     <h5 class="mb-20" style="background-color:#2D3142; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; color:white">{{ self.title }}</h5>
    
@@ -22,12 +28,11 @@
               {% for j in i.pdfs %}
                   <li><a class="dropdown-item disable" href="{{ j.url }}">{{ j.title }}</a>
               {% endfor %}
-              
-          </li>
+              </li>
           </ul>
         </div>
       </td>
     </tr>
     {% endfor %}
-    </tbody>
+  </tbody>
 </table>
